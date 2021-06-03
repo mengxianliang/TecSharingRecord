@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2CC1435259463D200127027 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC1434259463D200127027 /* AppDelegate.m */; };
+		C2CC143B259463D200127027 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC143A259463D200127027 /* ViewController.m */; };
+		C2CC143E259463D200127027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CC143C259463D200127027 /* Main.storyboard */; };
+		C2CC1440259463D700127027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CC143F259463D700127027 /* Assets.xcassets */; };
+		C2CC1443259463D700127027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CC1441259463D700127027 /* LaunchScreen.storyboard */; };
+		C2CC1446259463D700127027 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC1445259463D700127027 /* main.m */; };
+		C2CC1450259463D700127027 /* BezierPathDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC144F259463D700127027 /* BezierPathDemoTests.m */; };
+		C2CC145B259463D800127027 /* BezierPathDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC145A259463D800127027 /* BezierPathDemoUITests.m */; };
+		C2CC147F259469D600127027 /* DrawBezierPathDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC147E259469D600127027 /* DrawBezierPathDemoVC.m */; };
+		C2CC148A25946BB700127027 /* XLPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC148925946BB700127027 /* XLPoint.m */; };
+		C2CC149325946BBE00127027 /* XLLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC149225946BBE00127027 /* XLLine.m */; };
+		C2CC149F25947EFD00127027 /* CircleProgressDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC149E25947EFD00127027 /* CircleProgressDemoVC.m */; };
+		C2CC14A925947FA000127027 /* CMCDownloadProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14A725947FA000127027 /* CMCDownloadProgressHUD.m */; };
+		C2CC14AF2594802400127027 /* PaymentsDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14AE2594802400127027 /* PaymentsDemoVC.m */; };
+		C2CC14BA259480A400127027 /* XLPaymentSuccessHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14B7259480A400127027 /* XLPaymentSuccessHUD.m */; };
+		C2CC14BB259480A400127027 /* XLPaymentLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14B8259480A400127027 /* XLPaymentLoadingHUD.m */; };
+		C2CC14C7259482CB00127027 /* MovingPathDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14C6259482CB00127027 /* MovingPathDemoVC.m */; };
+		C2CC14D0259482DD00127027 /* XLBallLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14CE259482DD00127027 /* XLBallLoading.m */; };
+		C2CC14D62594844200127027 /* WaveProgressDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14D52594844200127027 /* WaveProgressDemoVC.m */; };
+		C2CC14E02594846E00127027 /* XLWaveProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14DD2594846E00127027 /* XLWaveProgress.m */; };
+		C2CC14E12594846E00127027 /* XLWave.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14DF2594846E00127027 /* XLWave.m */; };
+		C2CC14F22594872C00127027 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CC14EE2594872C00127027 /* 2.png */; };
+		C2CC14F32594872C00127027 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2CC14EF2594872C00127027 /* 1.png */; };
+		C2CC14F42594872C00127027 /* XLTieBarLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14F12594872C00127027 /* XLTieBarLoading.m */; };
+		C2CC14FA2594875B00127027 /* TieBaLoadingDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC14F92594875B00127027 /* TieBaLoadingDemoVC.m */; };
+		C2CC15082594894D00127027 /* XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC15062594894D00127027 /* XLBubbleTransition.m */; };
+		C2CC15092594894D00127027 /* UIViewController+XLBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC15072594894D00127027 /* UIViewController+XLBubbleTransition.m */; };
+		C2CC150F2594899400127027 /* ViewTransitionDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC150E2594899400127027 /* ViewTransitionDemoVC.m */; };
+		C2CC152425948A1D00127027 /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC152325948A1D00127027 /* ViewControllerB.m */; };
+		C2CC152F2594974B00127027 /* QQUnreadMessageDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC152E2594974B00127027 /* QQUnreadMessageDemoVC.m */; };
+		C2CC15372594977900127027 /* XLPanGestureGecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC15362594977900127027 /* XLPanGestureGecognizer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2CC144C259463D700127027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2CC1428259463D200127027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2CC142F259463D200127027;
+			remoteInfo = BezierPathDemo;
+		};
+		C2CC1457259463D700127027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2CC1428259463D200127027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2CC142F259463D200127027;
+			remoteInfo = BezierPathDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2CC1430259463D200127027 /* BezierPathDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BezierPathDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2CC1433259463D200127027 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2CC1434259463D200127027 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C2CC1439259463D200127027 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C2CC143A259463D200127027 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C2CC143D259463D200127027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2CC143F259463D700127027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2CC1442259463D700127027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2CC1444259463D700127027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2CC1445259463D700127027 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2CC144B259463D700127027 /* BezierPathDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BezierPathDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2CC144F259463D700127027 /* BezierPathDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierPathDemoTests.m; sourceTree = "<group>"; };
+		C2CC1451259463D700127027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2CC1456259463D700127027 /* BezierPathDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BezierPathDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2CC145A259463D800127027 /* BezierPathDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierPathDemoUITests.m; sourceTree = "<group>"; };
+		C2CC145C259463D800127027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2CC147D259469D600127027 /* DrawBezierPathDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawBezierPathDemoVC.h; sourceTree = "<group>"; };
+		C2CC147E259469D600127027 /* DrawBezierPathDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawBezierPathDemoVC.m; sourceTree = "<group>"; };
+		C2CC148825946BB700127027 /* XLPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLPoint.h; sourceTree = "<group>"; };
+		C2CC148925946BB700127027 /* XLPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLPoint.m; sourceTree = "<group>"; };
+		C2CC149125946BBE00127027 /* XLLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLine.h; sourceTree = "<group>"; };
+		C2CC149225946BBE00127027 /* XLLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLine.m; sourceTree = "<group>"; };
+		C2CC149D25947EFD00127027 /* CircleProgressDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleProgressDemoVC.h; sourceTree = "<group>"; };
+		C2CC149E25947EFD00127027 /* CircleProgressDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleProgressDemoVC.m; sourceTree = "<group>"; };
+		C2CC14A725947FA000127027 /* CMCDownloadProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCDownloadProgressHUD.m; sourceTree = "<group>"; };
+		C2CC14A825947FA000127027 /* CMCDownloadProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCDownloadProgressHUD.h; sourceTree = "<group>"; };
+		C2CC14AD2594802400127027 /* PaymentsDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentsDemoVC.h; sourceTree = "<group>"; };
+		C2CC14AE2594802400127027 /* PaymentsDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentsDemoVC.m; sourceTree = "<group>"; };
+		C2CC14B6259480A300127027 /* XLPaymentSuccessHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPaymentSuccessHUD.h; sourceTree = "<group>"; };
+		C2CC14B7259480A400127027 /* XLPaymentSuccessHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPaymentSuccessHUD.m; sourceTree = "<group>"; };
+		C2CC14B8259480A400127027 /* XLPaymentLoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPaymentLoadingHUD.m; sourceTree = "<group>"; };
+		C2CC14B9259480A400127027 /* XLPaymentLoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPaymentLoadingHUD.h; sourceTree = "<group>"; };
+		C2CC14C5259482CB00127027 /* MovingPathDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovingPathDemoVC.h; sourceTree = "<group>"; };
+		C2CC14C6259482CB00127027 /* MovingPathDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovingPathDemoVC.m; sourceTree = "<group>"; };
+		C2CC14CE259482DD00127027 /* XLBallLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBallLoading.m; sourceTree = "<group>"; };
+		C2CC14CF259482DD00127027 /* XLBallLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBallLoading.h; sourceTree = "<group>"; };
+		C2CC14D42594844200127027 /* WaveProgressDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveProgressDemoVC.h; sourceTree = "<group>"; };
+		C2CC14D52594844200127027 /* WaveProgressDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveProgressDemoVC.m; sourceTree = "<group>"; };
+		C2CC14DC2594846E00127027 /* XLWaveProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLWaveProgress.h; sourceTree = "<group>"; };
+		C2CC14DD2594846E00127027 /* XLWaveProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLWaveProgress.m; sourceTree = "<group>"; };
+		C2CC14DE2594846E00127027 /* XLWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLWave.h; sourceTree = "<group>"; };
+		C2CC14DF2594846E00127027 /* XLWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLWave.m; sourceTree = "<group>"; };
+		C2CC14EE2594872C00127027 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		C2CC14EF2594872C00127027 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		C2CC14F02594872C00127027 /* XLTieBarLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTieBarLoading.h; sourceTree = "<group>"; };
+		C2CC14F12594872C00127027 /* XLTieBarLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTieBarLoading.m; sourceTree = "<group>"; };
+		C2CC14F82594875B00127027 /* TieBaLoadingDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TieBaLoadingDemoVC.h; sourceTree = "<group>"; };
+		C2CC14F92594875B00127027 /* TieBaLoadingDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TieBaLoadingDemoVC.m; sourceTree = "<group>"; };
+		C2CC15042594894D00127027 /* UIViewController+XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XLBubbleTransition.h"; sourceTree = "<group>"; };
+		C2CC15052594894D00127027 /* XLBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLBubbleTransition.h; sourceTree = "<group>"; };
+		C2CC15062594894D00127027 /* XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLBubbleTransition.m; sourceTree = "<group>"; };
+		C2CC15072594894D00127027 /* UIViewController+XLBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XLBubbleTransition.m"; sourceTree = "<group>"; };
+		C2CC150D2594899400127027 /* ViewTransitionDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTransitionDemoVC.h; sourceTree = "<group>"; };
+		C2CC150E2594899400127027 /* ViewTransitionDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTransitionDemoVC.m; sourceTree = "<group>"; };
+		C2CC152225948A1D00127027 /* ViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
+		C2CC152325948A1D00127027 /* ViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
+		C2CC152D2594974B00127027 /* QQUnreadMessageDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQUnreadMessageDemoVC.h; sourceTree = "<group>"; };
+		C2CC152E2594974B00127027 /* QQUnreadMessageDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQUnreadMessageDemoVC.m; sourceTree = "<group>"; };
+		C2CC15352594977900127027 /* XLPanGestureGecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPanGestureGecognizer.h; sourceTree = "<group>"; };
+		C2CC15362594977900127027 /* XLPanGestureGecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPanGestureGecognizer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2CC142D259463D200127027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2CC1448259463D700127027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2CC1453259463D700127027 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2CC1427259463D200127027 = {
+			isa = PBXGroup;
+			children = (
+				C2CC146B259463DE00127027 /* Demos */,
+				C2CC1432259463D200127027 /* BezierPathDemo */,
+				C2CC144E259463D700127027 /* BezierPathDemoTests */,
+				C2CC1459259463D800127027 /* BezierPathDemoUITests */,
+				C2CC1431259463D200127027 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2CC1431259463D200127027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC1430259463D200127027 /* BezierPathDemo.app */,
+				C2CC144B259463D700127027 /* BezierPathDemoTests.xctest */,
+				C2CC1456259463D700127027 /* BezierPathDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2CC1432259463D200127027 /* BezierPathDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC1433259463D200127027 /* AppDelegate.h */,
+				C2CC1434259463D200127027 /* AppDelegate.m */,
+				C2CC1439259463D200127027 /* ViewController.h */,
+				C2CC143A259463D200127027 /* ViewController.m */,
+				C2CC143C259463D200127027 /* Main.storyboard */,
+				C2CC143F259463D700127027 /* Assets.xcassets */,
+				C2CC1441259463D700127027 /* LaunchScreen.storyboard */,
+				C2CC1444259463D700127027 /* Info.plist */,
+				C2CC1445259463D700127027 /* main.m */,
+			);
+			path = BezierPathDemo;
+			sourceTree = "<group>";
+		};
+		C2CC144E259463D700127027 /* BezierPathDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC144F259463D700127027 /* BezierPathDemoTests.m */,
+				C2CC1451259463D700127027 /* Info.plist */,
+			);
+			path = BezierPathDemoTests;
+			sourceTree = "<group>";
+		};
+		C2CC1459259463D800127027 /* BezierPathDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC145A259463D800127027 /* BezierPathDemoUITests.m */,
+				C2CC145C259463D800127027 /* Info.plist */,
+			);
+			path = BezierPathDemoUITests;
+			sourceTree = "<group>";
+		};
+		C2CC146B259463DE00127027 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14EC259486F100127027 /* ViewTransitionDemo */,
+				C2CC14762594656D00127027 /* QQUnreadMessageDemo */,
+				C2CC1472259464E700127027 /* TieBaLoadingDemo */,
+				C2CC1471259464DA00127027 /* WaveProgressDemo */,
+				C2CC1470259464AC00127027 /* MovingPathDemo */,
+				C2CC146F2594644D00127027 /* PaymentsDemo */,
+				C2CC146E2594643800127027 /* CircleProgressDemo */,
+				C2CC146D259463EF00127027 /* DrawBezierPathDemo */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		C2CC146D259463EF00127027 /* DrawBezierPathDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC148725946BA200127027 /* M */,
+				C2CC148625946B9C00127027 /* C */,
+			);
+			path = DrawBezierPathDemo;
+			sourceTree = "<group>";
+		};
+		C2CC146E2594643800127027 /* CircleProgressDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14A625947F9400127027 /* V */,
+				C2CC149D25947EFD00127027 /* CircleProgressDemoVC.h */,
+				C2CC149E25947EFD00127027 /* CircleProgressDemoVC.m */,
+			);
+			path = CircleProgressDemo;
+			sourceTree = "<group>";
+		};
+		C2CC146F2594644D00127027 /* PaymentsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14B52594809600127027 /* C */,
+				C2CC14B42594809000127027 /* V */,
+			);
+			path = PaymentsDemo;
+			sourceTree = "<group>";
+		};
+		C2CC1470259464AC00127027 /* MovingPathDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14C4259482BE00127027 /* C */,
+				C2CC14C3259482B900127027 /* V */,
+			);
+			path = MovingPathDemo;
+			sourceTree = "<group>";
+		};
+		C2CC1471259464DA00127027 /* WaveProgressDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14E52594847100127027 /* C */,
+				C2CC14DB2594846500127027 /* V */,
+			);
+			path = WaveProgressDemo;
+			sourceTree = "<group>";
+		};
+		C2CC1472259464E700127027 /* TieBaLoadingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14EB259486EC00127027 /* C */,
+				C2CC14EA259486E800127027 /* V */,
+			);
+			path = TieBaLoadingDemo;
+			sourceTree = "<group>";
+		};
+		C2CC14762594656D00127027 /* QQUnreadMessageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC15342594975300127027 /* C */,
+				C2CC15332594974F00127027 /* V */,
+			);
+			path = QQUnreadMessageDemo;
+			sourceTree = "<group>";
+		};
+		C2CC148625946B9C00127027 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC147D259469D600127027 /* DrawBezierPathDemoVC.h */,
+				C2CC147E259469D600127027 /* DrawBezierPathDemoVC.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C2CC148725946BA200127027 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC148825946BB700127027 /* XLPoint.h */,
+				C2CC148925946BB700127027 /* XLPoint.m */,
+				C2CC149125946BBE00127027 /* XLLine.h */,
+				C2CC149225946BBE00127027 /* XLLine.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		C2CC14A625947F9400127027 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14A825947FA000127027 /* CMCDownloadProgressHUD.h */,
+				C2CC14A725947FA000127027 /* CMCDownloadProgressHUD.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C2CC14B42594809000127027 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14B9259480A400127027 /* XLPaymentLoadingHUD.h */,
+				C2CC14B8259480A400127027 /* XLPaymentLoadingHUD.m */,
+				C2CC14B6259480A300127027 /* XLPaymentSuccessHUD.h */,
+				C2CC14B7259480A400127027 /* XLPaymentSuccessHUD.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C2CC14B52594809600127027 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14AD2594802400127027 /* PaymentsDemoVC.h */,
+				C2CC14AE2594802400127027 /* PaymentsDemoVC.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C2CC14C3259482B900127027 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14CF259482DD00127027 /* XLBallLoading.h */,
+				C2CC14CE259482DD00127027 /* XLBallLoading.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C2CC14C4259482BE00127027 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14C5259482CB00127027 /* MovingPathDemoVC.h */,
+				C2CC14C6259482CB00127027 /* MovingPathDemoVC.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C2CC14DB2594846500127027 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14DE2594846E00127027 /* XLWave.h */,
+				C2CC14DF2594846E00127027 /* XLWave.m */,
+				C2CC14DC2594846E00127027 /* XLWaveProgress.h */,
+				C2CC14DD2594846E00127027 /* XLWaveProgress.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C2CC14E52594847100127027 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14D42594844200127027 /* WaveProgressDemoVC.h */,
+				C2CC14D52594844200127027 /* WaveProgressDemoVC.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C2CC14EA259486E800127027 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14ED2594872C00127027 /* RES */,
+				C2CC14F02594872C00127027 /* XLTieBarLoading.h */,
+				C2CC14F12594872C00127027 /* XLTieBarLoading.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C2CC14EB259486EC00127027 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14F82594875B00127027 /* TieBaLoadingDemoVC.h */,
+				C2CC14F92594875B00127027 /* TieBaLoadingDemoVC.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C2CC14EC259486F100127027 /* ViewTransitionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC15032594893A00127027 /* C */,
+				C2CC1501259488FB00127027 /* V */,
+			);
+			path = ViewTransitionDemo;
+			sourceTree = "<group>";
+		};
+		C2CC14ED2594872C00127027 /* RES */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC14EE2594872C00127027 /* 2.png */,
+				C2CC14EF2594872C00127027 /* 1.png */,
+			);
+			path = RES;
+			sourceTree = "<group>";
+		};
+		C2CC1501259488FB00127027 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC15042594894D00127027 /* UIViewController+XLBubbleTransition.h */,
+				C2CC15072594894D00127027 /* UIViewController+XLBubbleTransition.m */,
+				C2CC15052594894D00127027 /* XLBubbleTransition.h */,
+				C2CC15062594894D00127027 /* XLBubbleTransition.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C2CC15032594893A00127027 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC150D2594899400127027 /* ViewTransitionDemoVC.h */,
+				C2CC150E2594899400127027 /* ViewTransitionDemoVC.m */,
+				C2CC152225948A1D00127027 /* ViewControllerB.h */,
+				C2CC152325948A1D00127027 /* ViewControllerB.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		C2CC15332594974F00127027 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC15352594977900127027 /* XLPanGestureGecognizer.h */,
+				C2CC15362594977900127027 /* XLPanGestureGecognizer.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		C2CC15342594975300127027 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C2CC152D2594974B00127027 /* QQUnreadMessageDemoVC.h */,
+				C2CC152E2594974B00127027 /* QQUnreadMessageDemoVC.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2CC142F259463D200127027 /* BezierPathDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2CC145F259463D800127027 /* Build configuration list for PBXNativeTarget "BezierPathDemo" */;
+			buildPhases = (
+				C2CC142C259463D200127027 /* Sources */,
+				C2CC142D259463D200127027 /* Frameworks */,
+				C2CC142E259463D200127027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BezierPathDemo;
+			productName = BezierPathDemo;
+			productReference = C2CC1430259463D200127027 /* BezierPathDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2CC144A259463D700127027 /* BezierPathDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2CC1462259463D800127027 /* Build configuration list for PBXNativeTarget "BezierPathDemoTests" */;
+			buildPhases = (
+				C2CC1447259463D700127027 /* Sources */,
+				C2CC1448259463D700127027 /* Frameworks */,
+				C2CC1449259463D700127027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2CC144D259463D700127027 /* PBXTargetDependency */,
+			);
+			name = BezierPathDemoTests;
+			productName = BezierPathDemoTests;
+			productReference = C2CC144B259463D700127027 /* BezierPathDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2CC1455259463D700127027 /* BezierPathDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2CC1465259463D800127027 /* Build configuration list for PBXNativeTarget "BezierPathDemoUITests" */;
+			buildPhases = (
+				C2CC1452259463D700127027 /* Sources */,
+				C2CC1453259463D700127027 /* Frameworks */,
+				C2CC1454259463D700127027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2CC1458259463D700127027 /* PBXTargetDependency */,
+			);
+			name = BezierPathDemoUITests;
+			productName = BezierPathDemoUITests;
+			productReference = C2CC1456259463D700127027 /* BezierPathDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2CC1428259463D200127027 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					C2CC142F259463D200127027 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					C2CC144A259463D700127027 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = C2CC142F259463D200127027;
+					};
+					C2CC1455259463D700127027 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = C2CC142F259463D200127027;
+					};
+				};
+			};
+			buildConfigurationList = C2CC142B259463D200127027 /* Build configuration list for PBXProject "BezierPathDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2CC1427259463D200127027;
+			productRefGroup = C2CC1431259463D200127027 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2CC142F259463D200127027 /* BezierPathDemo */,
+				C2CC144A259463D700127027 /* BezierPathDemoTests */,
+				C2CC1455259463D700127027 /* BezierPathDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2CC142E259463D200127027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2CC1443259463D700127027 /* LaunchScreen.storyboard in Resources */,
+				C2CC1440259463D700127027 /* Assets.xcassets in Resources */,
+				C2CC14F22594872C00127027 /* 2.png in Resources */,
+				C2CC143E259463D200127027 /* Main.storyboard in Resources */,
+				C2CC14F32594872C00127027 /* 1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2CC1449259463D700127027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2CC1454259463D700127027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2CC142C259463D200127027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2CC150F2594899400127027 /* ViewTransitionDemoVC.m in Sources */,
+				C2CC14C7259482CB00127027 /* MovingPathDemoVC.m in Sources */,
+				C2CC14BB259480A400127027 /* XLPaymentLoadingHUD.m in Sources */,
+				C2CC143B259463D200127027 /* ViewController.m in Sources */,
+				C2CC15372594977900127027 /* XLPanGestureGecognizer.m in Sources */,
+				C2CC14AF2594802400127027 /* PaymentsDemoVC.m in Sources */,
+				C2CC1435259463D200127027 /* AppDelegate.m in Sources */,
+				C2CC1446259463D700127027 /* main.m in Sources */,
+				C2CC14FA2594875B00127027 /* TieBaLoadingDemoVC.m in Sources */,
+				C2CC152425948A1D00127027 /* ViewControllerB.m in Sources */,
+				C2CC147F259469D600127027 /* DrawBezierPathDemoVC.m in Sources */,
+				C2CC15082594894D00127027 /* XLBubbleTransition.m in Sources */,
+				C2CC14D62594844200127027 /* WaveProgressDemoVC.m in Sources */,
+				C2CC14A925947FA000127027 /* CMCDownloadProgressHUD.m in Sources */,
+				C2CC15092594894D00127027 /* UIViewController+XLBubbleTransition.m in Sources */,
+				C2CC14D0259482DD00127027 /* XLBallLoading.m in Sources */,
+				C2CC14F42594872C00127027 /* XLTieBarLoading.m in Sources */,
+				C2CC14E12594846E00127027 /* XLWave.m in Sources */,
+				C2CC148A25946BB700127027 /* XLPoint.m in Sources */,
+				C2CC14E02594846E00127027 /* XLWaveProgress.m in Sources */,
+				C2CC149325946BBE00127027 /* XLLine.m in Sources */,
+				C2CC14BA259480A400127027 /* XLPaymentSuccessHUD.m in Sources */,
+				C2CC152F2594974B00127027 /* QQUnreadMessageDemoVC.m in Sources */,
+				C2CC149F25947EFD00127027 /* CircleProgressDemoVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2CC1447259463D700127027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2CC1450259463D700127027 /* BezierPathDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2CC1452259463D700127027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2CC145B259463D800127027 /* BezierPathDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2CC144D259463D700127027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2CC142F259463D200127027 /* BezierPathDemo */;
+			targetProxy = C2CC144C259463D700127027 /* PBXContainerItemProxy */;
+		};
+		C2CC1458259463D700127027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2CC142F259463D200127027 /* BezierPathDemo */;
+			targetProxy = C2CC1457259463D700127027 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2CC143C259463D200127027 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2CC143D259463D200127027 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2CC1441259463D700127027 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2CC1442259463D700127027 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2CC145D259463D800127027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C2CC145E259463D800127027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2CC1460259463D800127027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BezierPathDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mxl.BezierPathDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2CC1461259463D800127027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BezierPathDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mxl.BezierPathDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2CC1463259463D800127027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BezierPathDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mxl.BezierPathDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BezierPathDemo.app/BezierPathDemo";
+			};
+			name = Debug;
+		};
+		C2CC1464259463D800127027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BezierPathDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mxl.BezierPathDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BezierPathDemo.app/BezierPathDemo";
+			};
+			name = Release;
+		};
+		C2CC1466259463D800127027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BezierPathDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mxl.BezierPathDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BezierPathDemo;
+			};
+			name = Debug;
+		};
+		C2CC1467259463D800127027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BezierPathDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mxl.BezierPathDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BezierPathDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2CC142B259463D200127027 /* Build configuration list for PBXProject "BezierPathDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2CC145D259463D800127027 /* Debug */,
+				C2CC145E259463D800127027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2CC145F259463D800127027 /* Build configuration list for PBXNativeTarget "BezierPathDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2CC1460259463D800127027 /* Debug */,
+				C2CC1461259463D800127027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2CC1462259463D800127027 /* Build configuration list for PBXNativeTarget "BezierPathDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2CC1463259463D800127027 /* Debug */,
+				C2CC1464259463D800127027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2CC1465259463D800127027 /* Build configuration list for PBXNativeTarget "BezierPathDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2CC1466259463D800127027 /* Debug */,
+				C2CC1467259463D800127027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2CC1428259463D200127027 /* Project object */;
+}
