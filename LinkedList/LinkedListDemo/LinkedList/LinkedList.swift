@@ -7,6 +7,10 @@
 
 import UIKit
 
+public enum AFError: Error {
+    case willShow
+}
+
 class LinkedList: NSObject {
     //链表的长度
     var size: Int = 0
@@ -22,6 +26,7 @@ class LinkedList: NSObject {
     /// 添加元素
     func add(_ index: Int, _ value: Int) {
         
+        //在0的位置插入需要特殊处理
         if index == 0 {
             //新建一个节点,next指针指向第一个节点的
             let node = ListNode.init(value, head)
@@ -46,14 +51,16 @@ class LinkedList: NSObject {
     
     /// 删除元素
     func remove(_ index: Int) {
-        //获取插入位置的前一个节点
-        let prevNode = nodeOf(index - 1)
-        
-        prevNode?.next = prevNode?.next?.next
-        
-        
-        
+        //在0的位置插入需要特殊处理
+        if index == 0 {
+            head = head?.next
+        }else {
+            //获取插入位置的前一个节点
+            let prevNode = nodeOf(index - 1)
+            prevNode?.next = prevNode?.next?.next
+        }
     }
+    
     
     /// 获取index位置的节点
     func nodeOf(_ index: Int) -> ListNode? {
@@ -65,6 +72,11 @@ class LinkedList: NSObject {
     }
     
     
+    func checkIndex(_ index: Int) throws {
+        if index > 100 {
+            throw AFError.willShow
+        }
+    }
     
     //修改
     func set(_ index: Int, _ value: Int) {

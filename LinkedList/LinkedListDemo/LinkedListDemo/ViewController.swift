@@ -11,9 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        checkIndex(200)
     }
 
+    func checkIndex(_ index: Int) throws {
+        if index > 100 {
+            throw AFError.willShow
+        }
+    }
 
 }
 
