@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LinkedList: NSObject {
+class SingleLinkedList {
     //链表的长度
     var size: Int = 0
     //头节点指针

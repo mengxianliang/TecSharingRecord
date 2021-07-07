@@ -15,7 +15,7 @@
 		C2EE60E726686FBE00886380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2EE60E526686FBE00886380 /* LaunchScreen.storyboard */; };
 		C2EE60F226686FBE00886380 /* LinkedListDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60F126686FBE00886380 /* LinkedListDemoTests.swift */; };
 		C2EE60FD26686FBE00886380 /* LinkedListDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60FC26686FBE00886380 /* LinkedListDemoUITests.swift */; };
-		C2EE610E2668704200886380 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE610D2668704200886380 /* LinkedList.swift */; };
+		C2EE610E2668704200886380 /* SingleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE610D2668704200886380 /* SingleLinkedList.swift */; };
 		C2EE61112668705700886380 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE61102668705700886380 /* ListNode.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		C2EE60F826686FBE00886380 /* LinkedListDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedListDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EE60FC26686FBE00886380 /* LinkedListDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListDemoUITests.swift; sourceTree = "<group>"; };
 		C2EE60FE26686FBE00886380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2EE610D2668704200886380 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		C2EE610D2668704200886380 /* SingleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkedList.swift; sourceTree = "<group>"; };
 		C2EE61102668705700886380 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 		C2EE610F2668704500886380 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				C2EE610D2668704200886380 /* LinkedList.swift */,
+				C2EE610D2668704200886380 /* SingleLinkedList.swift */,
 				C2EE61102668705700886380 /* ListNode.swift */,
 			);
 			path = LinkedList;
@@ -275,7 +275,7 @@
 				C2EE60DF26686FBA00886380 /* ViewController.swift in Sources */,
 				C2EE61112668705700886380 /* ListNode.swift in Sources */,
 				C2EE60DB26686FBA00886380 /* AppDelegate.swift in Sources */,
-				C2EE610E2668704200886380 /* LinkedList.swift in Sources */,
+				C2EE610E2668704200886380 /* SingleLinkedList.swift in Sources */,
 				C2EE60DD26686FBA00886380 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
