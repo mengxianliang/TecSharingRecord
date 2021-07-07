@@ -14,28 +14,32 @@ class ViewController: UIViewController {
         /// 链表封装
 //        linkedListTest()
         
-        
-        /// 创建链表
-//        let head = testLinkedList()
-//        head.printLinkedList()
-        
-        
         /// 237. 删除链表中的节点
         /// https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
-//        print("删除链表中的节点")
+        /// 创建链表
+//        let node5 = ListNode(5, nil)
+//        let node4 = ListNode(4, node5)
+//        let node3 = ListNode(3, node4)
+//        let node2 = ListNode(2, node3)
+//        let node1 = ListNode(1, node2)
+//        let head = node1
+//        head.printLinkedList()
+//        print("删除链表中的节点\(node2.val)")
 //        deleteNode(node2)
 //        head.printLinkedList()
         
-        
         /// 203. 移除链表元素
         /// https://leetcode-cn.com/problems/remove-linked-list-elements/
-//        print("移除链表元素")
+        /// 创建链表
+//        let head = createTestLinkedList()
+//        head.printLinkedList()
+//        print("移除链表元素\(2)")
 //        let newHead = removeElements(head, 2)
 //        newHead?.printLinkedList()
         
         /// 206. 反转链表
         /// https://leetcode-cn.com/problems/reverse-linked-list/
-//        let head = testReverseLinkedList()
+//        let head = createTestReverseLinkedList()
 //        head.printLinkedList()
 //        print("反转链表")
         
@@ -44,13 +48,28 @@ class ViewController: UIViewController {
 //        print("最终结果：10的阶乘 = \(num)")
         
         /// 递归方式反转链表
-//        let newHead = self.reverseLinkedList(head)
+//        let newHead = reverseLinkedList(head)
 //        newHead?.printLinkedList()
         
         /// 迭代方式反转链表
 //        let newHead = reverseLinkedList2(head)
 //        newHead?.printLinkedList()
         
+        /// 141. 环形链表
+        /// https://leetcode-cn.com/problems/linked-list-cycle/
+//        let head1 = createTestLinkedList()
+//        if hasCycle(head1) {
+//            print("链表中有环")
+//        }else {
+//            print("链表中没有环")
+//        }
+//
+//        let head2 = createTestCycleLinkedList()
+//        if hasCycle(head2) {
+//            print("链表中有环")
+//        }else {
+//            print("链表中没有环")
+//        }
         
     }
     
@@ -221,7 +240,7 @@ class ViewController: UIViewController {
     
     //MARK:--------------------测试链表数据
     /// 创建链表 [1,2,3,4,5]
-    func testLinkedList() -> ListNode {
+    func createTestLinkedList() -> ListNode {
         let node5 = ListNode(5, nil)
         let node4 = ListNode(4, node5)
         let node3 = ListNode(3, node4)
@@ -231,13 +250,25 @@ class ViewController: UIViewController {
     }
     
     /// 创建链表 [5,4,3,2,1]
-    func testReverseLinkedList() -> ListNode {
+    func createTestReverseLinkedList() -> ListNode {
         let node1 = ListNode(1, nil)
         let node2 = ListNode(2, node1)
         let node3 = ListNode(3, node2)
         let node4 = ListNode(4, node3)
         let node5 = ListNode(5, node4)
         return node5
+    }
+    
+    /// 创建链表 [1,2,3,4,5] 5->3
+    func createTestCycleLinkedList() -> ListNode {
+        let node5 = ListNode(5, nil)
+        let node4 = ListNode(4, node5)
+        let node3 = ListNode(3, node4)
+        let node2 = ListNode(2, node3)
+        let node1 = ListNode(1, node2)
+        /// 5->3
+        node5.next = node3
+        return node1
     }
 }
 
