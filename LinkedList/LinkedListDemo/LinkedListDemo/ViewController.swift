@@ -71,6 +71,10 @@ class ViewController: UIViewController {
 //            print("链表中没有环")
 //        }
         
+        for i in stride(from: 100, to: 0, by: -1) {
+            print("i = \(i)")
+        }
+        
     }
     
     //MARK:--------------------链表封装测试

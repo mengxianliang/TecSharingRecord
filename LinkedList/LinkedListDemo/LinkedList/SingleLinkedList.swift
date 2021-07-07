@@ -3,7 +3,7 @@
 //  LinkedListDemo
 //
 //  Created by mxl on 2021/6/3.
-//
+//  单向链表
 
 import UIKit
 
@@ -11,7 +11,7 @@ class SingleLinkedList {
     //链表的长度
     var size: Int = 0
     //头节点指针
-    var head: ListNode?
+    private var head: ListNode?
         
     /// 增，在index位置添加元素
     func add(_ index: Int, _ value: Int) {
@@ -89,7 +89,7 @@ class SingleLinkedList {
         print(string)
     }
     
-    /// 私有方法，读取index位置的节点
+    /// 读取index位置的节点
     private func nodeOf(_ index: Int) -> ListNode? {
         var node = head
         for _ in 0..<index {

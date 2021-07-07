@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C276C3A22695A1EF002AE8E9 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C3A12695A1EF002AE8E9 /* LinkedList.swift */; };
+		C276C3A42695AE6A002AE8E9 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C3A32695AE6A002AE8E9 /* ListNode.swift */; };
 		C2EE60DB26686FBA00886380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60DA26686FBA00886380 /* AppDelegate.swift */; };
 		C2EE60DD26686FBA00886380 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60DC26686FBA00886380 /* SceneDelegate.swift */; };
 		C2EE60DF26686FBA00886380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60DE26686FBA00886380 /* ViewController.swift */; };
@@ -16,7 +18,6 @@
 		C2EE60F226686FBE00886380 /* LinkedListDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60F126686FBE00886380 /* LinkedListDemoTests.swift */; };
 		C2EE60FD26686FBE00886380 /* LinkedListDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60FC26686FBE00886380 /* LinkedListDemoUITests.swift */; };
 		C2EE610E2668704200886380 /* SingleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE610D2668704200886380 /* SingleLinkedList.swift */; };
-		C2EE61112668705700886380 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE61102668705700886380 /* ListNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C276C3A12695A1EF002AE8E9 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		C276C3A32695AE6A002AE8E9 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 		C2EE60D726686FBA00886380 /* LinkedListDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedListDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EE60DA26686FBA00886380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2EE60DC26686FBA00886380 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		C2EE60FC26686FBE00886380 /* LinkedListDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListDemoUITests.swift; sourceTree = "<group>"; };
 		C2EE60FE26686FBE00886380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2EE610D2668704200886380 /* SingleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkedList.swift; sourceTree = "<group>"; };
-		C2EE61102668705700886380 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				C2EE610D2668704200886380 /* SingleLinkedList.swift */,
-				C2EE61102668705700886380 /* ListNode.swift */,
+				C276C3A12695A1EF002AE8E9 /* LinkedList.swift */,
+				C276C3A32695AE6A002AE8E9 /* ListNode.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -272,11 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C276C3A22695A1EF002AE8E9 /* LinkedList.swift in Sources */,
 				C2EE60DF26686FBA00886380 /* ViewController.swift in Sources */,
-				C2EE61112668705700886380 /* ListNode.swift in Sources */,
 				C2EE60DB26686FBA00886380 /* AppDelegate.swift in Sources */,
 				C2EE610E2668704200886380 /* SingleLinkedList.swift in Sources */,
 				C2EE60DD26686FBA00886380 /* SceneDelegate.swift in Sources */,
+				C276C3A42695AE6A002AE8E9 /* ListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
