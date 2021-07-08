@@ -66,30 +66,39 @@ class LinkedList: NSObject {
         size += 1
     }
 
-//    /// 删，删除index位置的元素
-//    func remove(_ index: Int) {
-//        //在0的位置插入需要特殊处理
-//        if index == 0 {
-//            head = head?.next
-//        }else {
-//            //获取插入位置的前一个节点
-//            let prevNode = nodeOf(index - 1)
-//            prevNode?.next = prevNode?.next?.next
-//        }
-//        size -= 1
-//    }
-//
-//
-//    /// 改，修改链表index位置节点的元素
-//    func set(_ index: Int, _ value: Int) {
-//        let node = nodeOf(index)
-//        node?.val = value
-//    }
-//
-//    /// 查，读取index位置的元素
-//    func valueOfIndex(_ index: Int) -> Int {
-//        return nodeOf(index)?.val ?? 0
-//    }
+    /// 删，删除index位置的元素
+    func remove(_ index: Int) {
+        
+        let node = nodeOf(index)
+        let prev = node?.prev
+        let next = node?.next
+        
+        /// 边界时需要单独处理
+        if prev == nil {// index = 0
+            first = next
+        }else {
+            prev?.next = next
+        }
+        
+        if next == nil {// index = size - 1
+            last = prev
+        }else {
+            next?.prev = prev
+        }
+        size -= 1
+    }
+
+
+    /// 改，修改链表index位置节点的元素
+    func set(_ index: Int, _ value: Int) {
+        let node = nodeOf(index)
+        node?.val = value
+    }
+
+    /// 查，读取index位置的元素
+    func valueOfIndex(_ index: Int) -> Int {
+        return nodeOf(index)?.val ?? 0
+    }
 
     /// 清空链表
     func clear() {
@@ -105,25 +114,25 @@ class LinkedList: NSObject {
         first = nil
         last = nil
     }
-//
-//    /// 打印链表
-//    func printLinkedList() {
-//        var string = "["
-//        guard head != nil else {
-//            print("linked list is empty !,size = \(size)")
-//            return
-//        }
-//        var tempNode = head
-//        while tempNode != nil {
-//            string.append("\(tempNode?.val ?? 0)")
-//            if tempNode?.next != nil {
-//                string.append(",")
-//            }
-//            tempNode = tempNode?.next
-//        }
-//        string.append("],size = \(size)")
-//        print(string)
-//    }
+
+    /// 打印链表
+    func printLinkedList() {
+        var string = "["
+        guard first != nil else {
+            print("linked list is empty !,size = \(size)")
+            return
+        }
+        var tempNode = first
+        while tempNode != nil {
+            string.append("\(tempNode?.val ?? 0)")
+            if tempNode?.next != nil {
+                string.append(",")
+            }
+            tempNode = tempNode?.next
+        }
+        string.append("],size = \(size)")
+        print(string)
+    }
     
     /// 读取index位置的节点
     private func nodeOf(_ index: Int) -> DoubleListNode? {

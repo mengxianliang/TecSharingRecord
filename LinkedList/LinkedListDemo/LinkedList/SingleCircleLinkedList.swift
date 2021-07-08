@@ -1,13 +1,13 @@
 //
-//  LinkedList.swift
+//  SingleCircleLinkedList.swift
 //  LinkedListDemo
 //
-//  Created by mxl on 2021/6/3.
-//  单向链表
+//  Created by mxl on 2021/7/8.
+//  单向循环链表
 
 import UIKit
 
-class SingleLinkedList {
+class SingleCircleLinkedList: NSObject {
     //链表的长度
     var size: Int = 0
     //头节点指针
@@ -23,12 +23,6 @@ class SingleLinkedList {
             
             //更新头节点指针
             head = node
-            
-            /// 拿到最后一个节点
-            let last = size == 0 ? head : nodeOf(size - 1)
-            /// next指向第一个节点
-            last?.next = node
-            
             
         }else {
             //获取插入位置的前一个节点
@@ -49,15 +43,7 @@ class SingleLinkedList {
     func remove(_ index: Int) {
         //在0的位置插入需要特殊处理
         if index == 0 {
-            if size == 1 {
-                head = nil
-            }else {
-                /// 拿到最后一个节点
-                let last = nodeOf(size - 1)
-                head = head?.next
-                /// 指向新的头节点
-                last?.next = head
-            }
+            head = head?.next
         }else {
             //获取插入位置的前一个节点
             let prevNode = nodeOf(index - 1)
@@ -111,5 +97,4 @@ class SingleLinkedList {
         }
         return node ?? nil
     }
-    
 }

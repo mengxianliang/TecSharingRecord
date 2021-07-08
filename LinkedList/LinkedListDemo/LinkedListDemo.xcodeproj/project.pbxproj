@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C276C3A22695A1EF002AE8E9 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C3A12695A1EF002AE8E9 /* LinkedList.swift */; };
 		C276C3A42695AE6A002AE8E9 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C3A32695AE6A002AE8E9 /* ListNode.swift */; };
+		C276C3A62696A818002AE8E9 /* SingleCircleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C276C3A52696A818002AE8E9 /* SingleCircleLinkedList.swift */; };
 		C2EE60DB26686FBA00886380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60DA26686FBA00886380 /* AppDelegate.swift */; };
 		C2EE60DD26686FBA00886380 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60DC26686FBA00886380 /* SceneDelegate.swift */; };
 		C2EE60DF26686FBA00886380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE60DE26686FBA00886380 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		C276C3A12695A1EF002AE8E9 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		C276C3A32695AE6A002AE8E9 /* ListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		C276C3A52696A818002AE8E9 /* SingleCircleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCircleLinkedList.swift; sourceTree = "<group>"; };
 		C2EE60D726686FBA00886380 /* LinkedListDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedListDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EE60DA26686FBA00886380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2EE60DC26686FBA00886380 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,9 +140,10 @@
 		C2EE610F2668704500886380 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				C2EE610D2668704200886380 /* SingleLinkedList.swift */,
-				C276C3A12695A1EF002AE8E9 /* LinkedList.swift */,
 				C276C3A32695AE6A002AE8E9 /* ListNode.swift */,
+				C2EE610D2668704200886380 /* SingleLinkedList.swift */,
+				C276C3A52696A818002AE8E9 /* SingleCircleLinkedList.swift */,
+				C276C3A12695A1EF002AE8E9 /* LinkedList.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C276C3A62696A818002AE8E9 /* SingleCircleLinkedList.swift in Sources */,
 				C276C3A22695A1EF002AE8E9 /* LinkedList.swift in Sources */,
 				C2EE60DF26686FBA00886380 /* ViewController.swift in Sources */,
 				C2EE60DB26686FBA00886380 /* AppDelegate.swift in Sources */,

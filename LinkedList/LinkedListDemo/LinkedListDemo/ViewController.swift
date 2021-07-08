@@ -71,14 +71,13 @@ class ViewController: UIViewController {
 //            print("链表中没有环")
 //        }
         
-        for i in stride(from: 100, to: 0, by: -1) {
-            print("i = \(i)")
-        }
+        /// 双向链表测试
+        linkedListTest()
         
     }
     
-    //MARK:--------------------链表封装测试
-    func linkedListTest() {
+    //MARK:--------------------单向链表封装测试
+    func singleLinkedListTest() {
         
         /// 创建一个链表
         let linkedList = SingleLinkedList.init()
@@ -90,6 +89,38 @@ class ViewController: UIViewController {
         linkedList.add(3, 3)
         linkedList.add(4, 4)
         linkedList.add(5, 5)
+        linkedList.printLinkedList()
+        
+        /// 删
+        linkedList.remove(5)
+        linkedList.printLinkedList()
+        
+        /// 改
+        linkedList.set(0, -1)
+        linkedList.printLinkedList()
+        
+        /// 查
+        let val = linkedList.valueOfIndex(2)
+        print("value of index 2 = \(val)")
+        
+        /// 清空
+        linkedList.clear()
+        linkedList.printLinkedList()
+    }
+    
+    //MARK:--------------------双向链表封装测试
+    func linkedListTest() {
+        
+        /// 创建一个链表
+        let linkedList = LinkedList.init()
+        
+        /// 增
+        linkedList.add(0, 1)
+        linkedList.add(1, 2)
+        linkedList.add(2, 3)
+        linkedList.add(3, 4)
+        linkedList.add(4, 5)
+        linkedList.add(5, 6)
         linkedList.printLinkedList()
         
         /// 删
