@@ -12,18 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        autoreleasepool {
-            
-            let obj = NSObject()
-            
-            let obj1 = NSObject()
-            
-            let obj2 = NSObject()
-
-        }
-        
         /// 链表封装
-//        linkedListTest()
+//        singleLinkedListTest()
         
         /// 237. 删除链表中的节点
         /// https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
@@ -50,17 +40,17 @@ class ViewController: UIViewController {
         
         /// 206. 反转链表
         /// https://leetcode-cn.com/problems/reverse-linked-list/
-//        let head = createTestReverseLinkedList()
-//        head.printLinkedList()
-//        print("反转链表")
+        let head = createTestReverseLinkedList()
+        head.printLinkedList()
+        print("反转链表")
         
         /// 递归测试，计算阶乘
 //        let num = factorial(10)
 //        print("最终结果：10的阶乘 = \(num)")
         
         /// 递归方式反转链表
-//        let newHead = reverseLinkedList(head)
-//        newHead?.printLinkedList()
+        let newHead = reverseLinkedList(head)
+        newHead?.printLinkedList()
         
         /// 迭代方式反转链表
 //        let newHead = reverseLinkedList2(head)
@@ -83,7 +73,7 @@ class ViewController: UIViewController {
 //        }
         
         /// 双向链表测试
-        linkedListTest()
+//        linkedListTest()
         
     }
     
@@ -167,12 +157,12 @@ class ViewController: UIViewController {
             return head
         }
         
-        /// 创建一个虚拟节点，指向头节点
-        let dummyNode = ListNode.init()
-        dummyNode.next = head;
+        /// 创建一个虚拟头节点，指向头节点
+        let dummyHead = ListNode.init()
+        dummyHead.next = head
         
         /// 找到前一个节点
-        var lastNode: ListNode? = dummyNode
+        var prevNode: ListNode? = dummyHead
         /// 当前遍历位置节点
         var currentNode = head
         
@@ -181,16 +171,16 @@ class ViewController: UIViewController {
             /// 如果找到匹配的节点
             if currentNode?.val == val {
                 /// 前一个节点的next执行当前节点的next（删除当前节点）
-                lastNode?.next = currentNode?.next;
+                prevNode?.next = currentNode?.next;
             }else {/// 没找到匹配节点
                 /// 更新前一个节点
-                lastNode = currentNode
+                prevNode = currentNode
             }
             /// 更新当前遍历位置节点
             currentNode = currentNode?.next
         }
         /// 返回链表的头节点
-        return dummyNode.next
+        return dummyHead.next
     }
     
     //MARK:--------------------递归举例
@@ -209,11 +199,11 @@ class ViewController: UIViewController {
         
         /// 二、边界条件不满足时，递归前进（调用自身方法）
         print("递归调用：传入参数：n = \(n)")
-        let newNum = n * factorial(n - 1)
+        let result = n * factorial(n - 1)
         
-        print("递归计算：\(n)的阶乘 = \(newNum)")
+        print("递归计算：\(n)的阶乘 = \(result)")
         
-        return newNum
+        return result
     }
     
     //MARK:--------------------反转链表

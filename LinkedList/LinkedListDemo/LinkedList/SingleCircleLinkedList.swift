@@ -24,6 +24,11 @@ class SingleCircleLinkedList: NSObject {
             //更新头节点指针
             head = node
             
+            /// 拿到最后一个节点
+            let last = size == 0 ? head : nodeOf(size - 1)
+            /// next指向第一个节点
+            last?.next = node
+            
         }else {
             //获取插入位置的前一个节点
             let prevNode = nodeOf(index - 1)
@@ -41,9 +46,18 @@ class SingleCircleLinkedList: NSObject {
     
     /// 删，删除index位置的元素
     func remove(_ index: Int) {
+        
         //在0的位置插入需要特殊处理
         if index == 0 {
-            head = head?.next
+            if size == 1 {
+                head = nil
+            }else {
+                /// 拿到最后一个节点
+                let last = nodeOf(size - 1)
+                head = head?.next
+                /// 指向新的头节点
+                last?.next = head
+            }
         }else {
             //获取插入位置的前一个节点
             let prevNode = nodeOf(index - 1)
