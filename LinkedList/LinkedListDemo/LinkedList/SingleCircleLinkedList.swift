@@ -8,9 +8,9 @@
 import UIKit
 
 class SingleCircleLinkedList: NSObject {
-    //链表的长度
+    /// 链表的长度
     var size: Int = 0
-    //头节点指针
+    /// 头节点指针
     private var head: ListNode?
         
     /// 增，在index位置添加元素

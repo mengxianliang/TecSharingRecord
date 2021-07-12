@@ -12,6 +12,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        autoreleasepool {
+            
+            let obj = NSObject()
+            
+            let obj1 = NSObject()
+            
+            let obj2 = NSObject()
+
+        }
+        
         /// 链表封装
 //        linkedListTest()
         
