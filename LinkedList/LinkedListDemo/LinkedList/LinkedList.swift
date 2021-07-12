@@ -74,13 +74,13 @@ class LinkedList: NSObject {
         let next = node?.next
         
         /// 边界时需要单独处理
-        if prev == nil {// index = 0
+        if prev == nil {/// 头节点 index = 0
             first = next
         }else {
             prev?.next = next
         }
         
-        if next == nil {// index = size - 1
+        if next == nil {/// 尾节点 index = size - 1
             last = prev
         }else {
             next?.prev = prev

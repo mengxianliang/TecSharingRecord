@@ -40,17 +40,17 @@ class ViewController: UIViewController {
         
         /// 206. 反转链表
         /// https://leetcode-cn.com/problems/reverse-linked-list/
-        let head = createTestReverseLinkedList()
-        head.printLinkedList()
-        print("反转链表")
+//        let head = createTestReverseLinkedList()
+//        head.printLinkedList()
+//        print("反转链表")
         
         /// 递归测试，计算阶乘
 //        let num = factorial(10)
 //        print("最终结果：10的阶乘 = \(num)")
         
         /// 递归方式反转链表
-        let newHead = reverseLinkedList(head)
-        newHead?.printLinkedList()
+//        let newHead = reverseLinkedList(head)
+//        newHead?.printLinkedList()
         
         /// 迭代方式反转链表
 //        let newHead = reverseLinkedList2(head)
